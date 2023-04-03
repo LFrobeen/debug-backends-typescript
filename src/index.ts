@@ -18,6 +18,6 @@ app.all("*", (req: Request, res: Response) => {
   res.status(400).json("Route inconnue");
 });
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT, "0.0.0.0", () => {
   console.log("server has started");
 });
